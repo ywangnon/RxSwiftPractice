@@ -20,7 +20,7 @@ example(of: "just, of, form") {
     
     let observable4 = Observable.from([one, two, three])
 }
-
+// 기본 라이브러리
 let observer = NotificationCenter.default.addObserver(
     forName: UIResponder.keyboardDidChangeFrameNotification,
     object: nil,
@@ -28,3 +28,20 @@ let observer = NotificationCenter.default.addObserver(
         
 }
 
+let sequence = 0..<3
+var iterator = sequence.makeIterator()
+while let n = iterator.next() {
+    print(n)
+}
+
+// Subscribe()
+example(of: "subscribe") {
+    let one = 1
+    let two = 2
+    let three = 3
+    
+    let observable = Observable.of(one, two, three)
+    observable.subscribe({ (event) in
+        print(event)
+    })
+}
