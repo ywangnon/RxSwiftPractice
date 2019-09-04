@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/hansubyoo/Library/Mobile Documents/com~apple~CloudDocs/TestProject/RxSwiftPractice/Observable.playground">
+      location = "group:Observable.playground">
    </FileRef>
    <FileRef
       location = "group:RxSwiftPractice.xcodeproj">
